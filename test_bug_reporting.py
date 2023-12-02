@@ -14,14 +14,14 @@ class TestBugReporting:
         login_page.login(username="<Your_Username>", password="<Your_Password>")
         # Navigate to the bug reporting page or perform other actions if needed
         bug_report_page.report_bug(
-            product="RAID",
-            component="Controller Card",
-            version="1.3x",
-            severity="Normal",
-            hardware="Dell Server",
-            os="Windows",
-            category="Build",
-            description="Unable to expand virtual volume"
+            product="product name",
+            component="component name",
+            version="version of product",
+            severity="severity",
+            hardware="server name",
+            os="os name",
+            category="build id",
+            description="bug summary"
         )
         screenshot_filename = SCREENSHOTS_PATH + "bug_report.png"
         bug_report_page.take_screenshot(screenshot_filename)
